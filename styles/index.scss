@@ -1,0 +1,519 @@
+@import "preset";
+h {
+  &1 {
+    font-size: 6rem;
+    @include viewport-s {
+      font-size: 4.8rem;
+    }
+    @include viewport-xs {
+      font-size: 4.2rem;
+    }
+  }
+  &2 {
+    font-size: 3.75rem;
+    @include viewport-s {
+      font-size: 3rem;
+    }
+    @include viewport-xs {
+      font-size: 2.625rem;
+    }
+  }
+  &3 {
+    font-size: 3rem;
+    @include viewport-s {
+      font-size: 2.4rem;
+    }
+    @include viewport-xs {
+      font-size: 2.1rem;
+    }
+  }
+  &4 {
+    font-size: 2.125rem;
+    @include viewport-s {
+      font-size: 1.9125rem;
+    }
+    @include viewport-xs {
+      font-size: 1.7rem;
+    }
+  }
+  &5 {
+    font-size: 1.5rem;
+    @include viewport-s {
+      font-size: 1.35rem;
+    }
+    @include viewport-xs {
+      font-size: 1.2rem;
+    }
+  }
+  &6 {
+    font-size: 1.25rem;
+    @include viewport-s {
+      font-size: 1.125rem;
+    }
+    @include viewport-xs {
+      font-size: 1rem;
+    }
+  }
+}
+
+p, span {
+  font-size: 1.125rem;
+  @include viewport-s {
+    font-size: 1rem;
+  }
+  @include viewport-xs {
+    font-size: .875rem;
+  }
+}
+#wrap {
+  height: 100%;
+  > header {
+    border-color: rgba(255, 255, 255, .6);
+  }
+}
+
+@import "preset";
+#index {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, .8) url("../assets/images/index/index-background-01.jpg") no-repeat center / cover;
+  background-blend-mode: color;
+  section.swiper-slide {
+    padding: 5rem 1.5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    @include viewport-s {
+      padding: 5rem 1rem;
+    }
+    @include viewport-xs {
+      padding: 5rem 1rem;
+    }
+    > .section-background {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+    }
+    > .section-inner {
+      width: 100%;
+      height: 100%;
+      max-width: 100rem;
+      z-index: 1;
+    }
+  }
+  .animateOn {
+    opacity: 1 !important;
+    transform: translate(0) !important;
+  }
+  .zoomOut {
+    transform: scale(1) !important;
+  }
+}
+
+#index-pagination {
+  position: fixed;
+  right: unset;
+  left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  z-index: 9999;
+  @include viewport-l {
+    display: none;
+  }
+  @include viewport-m {
+    display: none;
+  }
+  @include viewport-s {
+    display: none;
+  }
+  @include viewport-xs {
+    display: none;
+  }
+  > .swiper-pagination-bullet {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .0625rem solid transparent;
+    background: transparent;
+    transition: all .5s ease;
+    &::after {
+      content: "";
+      width: .75rem;
+      height: .75rem;
+      border-radius: 50%;
+      background: #A6A6A6;
+    }
+    &-active {
+      border-color: #A6A6A6;
+    }
+  }
+}
+
+#index-banner {
+  > .section-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    > .logo {
+      width: 100%;
+      max-width: 50rem;
+      opacity: 0;
+      transition: all 1s ease-in-out;
+    }
+    > h5 {
+      font-weight: 500;
+      color: #FFFFFF;
+      word-break: keep-all;
+      text-align: center;
+      opacity: 0;
+      transition: all 1s ease-in-out;
+    }
+  }
+  > #notice-scroll {
+    position: absolute;
+    bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    z-index: 9999;
+    border: none;
+    outline: none;
+    background: transparent;
+    > span {
+      padding-left: .0625rem;
+      font-weight: 500;
+      color: #FFFFFF;
+      letter-spacing: .0625rem;
+    }
+    > img {
+      width: 1.5rem;
+      animation: buttonNext 1s linear infinite alternate;
+    }
+  }
+}
+
+#index-slogan {
+  > .section-background {
+    filter: brightness(.8);
+    transform: scale(1.2);
+    transition: all 2s ease-in-out;
+  }
+  > .section-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    > h2 {
+      color: #FFFFFF;
+      text-align: center;
+      opacity: 0;
+      transition: all 1s ease-in-out;
+    }
+  }
+}
+
+#index-pollutions {
+  > .section-inner {
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    @include viewport-l {
+      flex-direction: column;
+      gap: 5rem;
+    }
+    @include viewport-m {
+      flex-direction: column;
+      gap: 5rem;
+    }
+    @include viewport-s {
+      flex-direction: column;
+      gap: 3rem;
+    }
+    @include viewport-xs {
+      flex-direction: column;
+      gap: 3rem;
+    }
+    > .title {
+      opacity: 0;
+      transition: all 1s ease-in-out;
+      > h5 {
+        margin-top: 1rem;
+        font-weight: 600;
+        @include viewport-s {
+          margin-top: .5rem;
+        }
+        @include viewport-xs {
+          margin-top: .5rem;
+        }
+      }
+    }
+    > .button-wrap {
+      flex: 1;
+      max-width: 65rem;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      @include viewport-l {
+        width: 100%;
+        max-width: unset;
+      }
+      @include viewport-m {
+        width: 100%;
+        max-width: unset;
+      }
+      @include viewport-s {
+        width: 100%;
+        max-width: unset;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      @include viewport-xs {
+        width: 100%;
+        max-width: unset;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      > .button-link-sub {
+        width: 50%;
+        height: 100%;
+        padding: 1.5rem;
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: end;
+        align-items: end;
+        gap: .5rem;
+        overflow: hidden;
+        color: #FFFFFF;
+        opacity: 0;
+        transform: translateX(30%);
+        transition: all 1s ease-in-out;
+        @include viewport-s {
+          width: 100%;
+          height: 50%;
+        }
+        @include viewport-xs {
+          width: 100%;
+          height: 50%;
+        }
+        > a {
+          padding: .75rem 2rem;
+          z-index: 1;
+          border: .0625rem solid #FFFFFF;
+          border-radius: 5rem;
+          font-weight: 500;
+          transition: all .5s ease;
+          &:hover {
+            background: #FFFFFF;
+            color: #000000;
+            ~ .button-background {
+              transform: scale(1);
+            }
+          }
+        }
+        > h3 {
+          z-index: 1;
+          font-weight: 600;
+          letter-spacing: .125rem;
+        }
+        > .button-background {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          object-fit: cover;
+          transform: scale(1.2);
+          transition: all .5s ease;
+        }
+        &.air {
+          a:hover ~ .button-background {
+            filter: brightness(.5);
+          }
+        }
+        &.marine {
+          > .button-background {
+            filter: brightness(.7);
+          }
+          a:hover ~ .button-background {
+            filter: brightness(.4);
+          }
+        }
+      }
+    }
+  }
+}
+
+#index-campaign {
+  background: #A2C1E5;
+  > .section-inner {
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 3rem;
+    @include viewport-m {
+      padding: 0;
+    }
+    @include viewport-s {
+      padding: 0;
+    }
+    @include viewport-xs {
+      padding: 0;
+      gap: 1rem;
+    }
+    > .title {
+      opacity: 0;
+      transition: all 1s ease-in-out;
+      > h5 {
+        margin-top: 1rem;
+        font-weight: 600;
+        @include viewport-s {
+          margin-top: .5rem;
+        }
+        @include viewport-xs {
+          margin-top: .5rem;
+        }
+      }
+    }
+    > .button-wrap {
+      width: 100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include viewport-m {
+        flex: 1;
+      }
+      @include viewport-s {
+        flex: 1;
+      }
+      @include viewport-xs {
+        flex: 1;
+      }
+      > .swiper {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        .swiper-slide {
+          padding: 3rem 1.5rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          align-items: center;
+          gap: 1.5rem;
+          background: #FFFFFF;
+          opacity: 0;
+          transition: all .5s ease-in-out;
+          @include viewport-s {
+            gap: 1rem;
+          }
+          @include viewport-xs {
+            padding: 2rem 1rem;
+            gap: 1rem;
+          }
+          > img {
+            width: 50%;
+          }
+          > h6 {
+            font-weight: normal;
+          }
+          &:hover {
+            background: $blue-primary;
+            color: #FFFFFF;
+          }
+        }
+      }
+      > button {
+        width: 2rem;
+        height: 4rem;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        border: none;
+        background: #A6A6A6;
+        opacity: .8;
+        @include viewport-xl {
+          display: none;
+        }
+        @include viewport-l {
+          display: none;
+        }
+        > img {
+          width: 80%;
+        }
+        &.swiper-prev {
+          left: 0;
+          border-top-right-radius: .5rem;
+          border-bottom-right-radius: .5rem;
+        }
+        &.swiper-next {
+          right: 0;
+          border-top-left-radius: .5rem;
+          border-bottom-left-radius: .5rem;
+        }
+        &.swiper-button-disabled {
+          opacity: .3;
+        }
+      }
+    }
+    > .more {
+      margin: 0 auto;
+      padding: .75rem 2rem;
+      border: .0625rem solid #000000;
+      border-radius: 10rem;
+      transition: all .3s ease-in-out;
+      @include viewport-s {
+        padding: .25rem 1.5rem;
+      }
+      @include viewport-xs {
+        padding: .25rem 1.5rem;
+      }
+      > h5 {
+        font-weight: normal;
+      }
+      &:hover {
+        border-color: #FFFFFF;
+        background: $blue-primary;
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+
+@keyframes buttonNext {
+  from {
+    transform: translateY(40%);
+  }
+  to {
+    transform: translateY(-40%);
+  }
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+    <script src="scripts/climate.js"></script>
+
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/climate.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <title>Save the Earth</title>
+</head>
+<body>
+<div id="wrap">
+    <header>
+        <div class="header-inner">
+            <input id="header-menu-switch" type="checkbox">
+            <a class="button-link-index" href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 694.03 139.42">
+                    <g id="Layer_1-2">
+                        <path class="letters" fill="#FFFFFF" d="M29.3 80.53c-6.74 0-10.21 2.93-10.25 6.93-.1 4.39 4.2 6.54 10.55 7.91l6.15 1.46c13.62 2.98 21.53 9.77 21.58 21.09-.05 13.38-10.45 21.44-28.03 21.48-17.63-.05-29-7.96-29.3-24.22h16.02c.39 6.84 5.52 10.35 13.09 10.35 7.03 0 11.23-3.08 11.33-7.62-.1-4.1-3.71-6.25-11.52-8.01l-7.42-1.76C9.34 105.31 1.87 99.25 1.87 88.61c-.05-13.13 11.52-21.88 27.54-21.88s26.81 8.89 26.95 21.97H40.34c-.44-5.13-4.25-8.2-11.04-8.2ZM83.01 107.1c3.86-.24 10.45-.49 12.7-.59v-4.3c0-3.71-2.73-5.81-7.23-5.76-4.35-.05-7.18 1.9-7.81 5.37H65.34c.73-9.38 8.64-17.09 23.54-17.09 13.09 0 23.29 6.2 23.34 17.68v36.04H96.69v-7.42h-.39c-2.88 5.37-8.01 8.35-15.43 8.4-10.16-.05-17.53-5.22-17.48-15.72-.05-11.77 9.08-15.97 19.63-16.6Zm2.83 21.39c5.62 0 10.01-3.66 9.96-8.89v-3.42c-2 .05-7.57.34-10.06.59-4.15.44-6.79 2.73-6.74 6.25-.05 3.56 2.83 5.47 6.84 5.47ZM153.12 138.44h-18.85l-18.16-53.03h17.29l10.06 36.82h.59l9.96-36.82h17.38l-18.26 53.03ZM173.97 112.17c0-16.46 10.25-27.44 26.17-27.44 14.89 0 25.59 9.47 25.59 27.05v4.2h-35.55v.29c.05 6.79 4.15 11.23 10.84 11.23 4.49 0 7.86-1.95 9.18-5.08h15.33c-2 10.35-11.08 16.99-24.8 16.99-16.6 0-26.76-10.35-26.76-27.25Zm36.43-5.86c-.1-5.66-4.2-9.67-9.86-9.67s-10.11 4.2-10.35 9.67h20.21ZM286.18 97.53h-9.67v24.32c.05 3.32 1.71 4.35 4.49 4.39 1.37.1 4-.05 5.86-.2v12.6c-1.61.24-4.35.54-8.2.59-11.67-.05-18.65-4.83-18.55-15.53V97.53h-7.13V85.42h7.13v-12.7h16.41v12.7h9.67v12.11ZM312.3 138.44h-16.5v-70.7h15.92v27.34h.59c2.44-6.49 8.01-10.35 15.92-10.35 11.18 0 18.46 7.81 18.46 19.92v33.79h-16.5v-30.66c.05-5.96-3.12-9.52-8.69-9.57-5.47.05-9.18 3.71-9.18 9.86v30.37ZM354.98 112.17c0-16.46 10.25-27.44 26.17-27.44 14.89 0 25.59 9.47 25.59 27.05v4.2h-35.55v.29c.05 6.79 4.15 11.23 10.84 11.23 4.49 0 7.86-1.95 9.18-5.08h15.33c-2 10.35-11.08 16.99-24.8 16.99-16.6 0-26.76-10.35-26.76-27.25Zm36.43-5.86c-.1-5.66-4.2-9.67-9.86-9.67s-10.11 4.2-10.35 9.67h20.21ZM437.7 67.74h48.93v13.57h-32.32v14.94h29.79v13.57h-29.79v15.04h32.42v13.57h-49.02v-70.7ZM514.36 107.1c3.86-.24 10.45-.49 12.7-.59v-4.3c0-3.71-2.73-5.81-7.23-5.76-4.35-.05-7.18 1.9-7.81 5.37h-15.33c.73-9.38 8.64-17.09 23.54-17.09 13.09 0 23.29 6.2 23.34 17.68v36.04h-15.53v-7.42h-.39c-2.88 5.37-8.01 8.35-15.43 8.4-10.16-.05-17.53-5.22-17.48-15.72-.05-11.77 9.08-15.97 19.63-16.6Zm2.83 21.39c5.62 0 10.01-3.66 9.96-8.89v-3.42c-2 .05-7.57.34-10.06.59-4.15.44-6.79 2.73-6.74 6.25-.05 3.56 2.83 5.47 6.84 5.47ZM553.61 85.42h16.02v9.57h.49c1.95-6.93 6.64-10.3 12.5-10.35 1.51.05 3.32.29 4.69.59v14.36c-1.56-.49-4.54-.83-6.54-.78-6.15-.05-10.69 4.25-10.64 10.64v29h-16.5V85.42ZM626.03 97.53h-9.67v24.32c.05 3.32 1.71 4.35 4.49 4.39 1.37.1 4-.05 5.86-.2v12.6c-1.61.24-4.35.54-8.2.59-11.67-.05-18.65-4.83-18.55-15.53V97.53h-7.13V85.42h7.13v-12.7h16.41v12.7h9.67v12.11ZM652.15 138.44h-16.5v-70.7h15.92v27.34h.59c2.44-6.49 8.01-10.35 15.92-10.35 11.18 0 18.46 7.81 18.46 19.92v33.79h-16.5v-30.66c.05-5.96-3.12-9.52-8.69-9.57-5.47.05-9.18 3.71-9.18 9.86v30.37Z"/>
+                        <path class="point" d="M430.35 56.76C455.52 24.91 505.69 4.9 560.1 5c54.12.1 103.89 20.09 128.93 51.76" style="fill:none;stroke:#3b82bf;stroke-linecap:round;stroke-miterlimit:10;stroke-width:10px"/>
+                    </g>
+                </svg>
+            </a>
+            <label for="header-menu-switch">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="dropdown">
+                <nav>
+                    <h4>MENU</h4>
+                    <ul>
+                        <li class="category">
+                            <h6>환경문제</h6>
+                            <a href="sub_climate.html">
+                                <span>대기오염</span>
+                            </a>
+                            <a>
+                                <span>해양오염</span>
+                            </a>
+                        </li>
+                        <li class="category">
+                            <h6>캠페인</h6>
+                            <a>
+                                <span>서명운동</span>
+                            </a>
+                            <a>
+                                <span>나무심기</span>
+                            </a>
+                            <a>
+                                <span>환경정화</span>
+                            </a>
+                        </li>
+                        <li class="category">
+                            <h6>뉴스</h6>
+                            <a>
+                                <span>국내소식</span>
+                            </a>
+                            <a>
+                                <span>해외소식</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="sec_back"></div>
+        <div class="sec_cont">
+            <h1>지구온난화와 대기오염</h1>
+            <p>전세계적인 무분별한 발전으로 인해 오염되어 인간에게 악영향을 미치는 상태를 말한다.</p>
+        </div>
+    </section>
+    <article>
+        <div class="art_cont1">
+            <div class="title">
+                <img src="assets/images/climate/global_warming.png" alt="온난화_임티" name="move_up" data-target="0">
+                <h1 name="move_up1" data-target="500">일상을 위협하는 지구온난화, 그리고 기후위기</h1>
+            </div>
+            <div class="cont1_boxs">
+                <div class="cont1_box" name="move_up">
+                    <div class="box_txt">
+                        <h3>30일 이상 연일 지속되는 30℃ 이상의 폭염</h3>
+                        <p>지난 여름 30도를 넘는 살인적인 더위가 계속되고 온열 질환으로 인한 사망자가 증가했습니다. 전세계적으로 폭염문제는 심각한 정도이고 해를 거듭할 수록 재난 수준의 폭염 일수가 길어질 것입니다.</p>
+                    </div>
+                    <img class="box_img" src="assets/images/climate/heat_wave.jpg" alt="폭염이미지">
+                </div>
+                <div class="cont1_box" name="move_up">
+                    <img class="box_img" src="assets/images/climate/flood_2.jpg" alt="해안범람이미지">
+                    <div class="box_txt">
+                        <h3>2030년 세계 곳곳의 섬나라는 바다속으로</h3>
+                        <p>극지방의 해빙속도가 빨라짐에 따라 2030년도에는 한반도의 5% 면적이 물속에 잠기고, 해수면의 높이가 높지않은 몇몇의 국가들은 존폐의 위험을 놓고있습니다. 하루빨리 해빙의 속도를 늦춰야 합니다.</p>
+                    </div>
+                    <img class="box_img" src="assets/images/climate/flood_2.jpg" alt="해안범람이미지">
+                </div>
+                <div class="cont1_box" name="move_up">
+                    <div class="box_txt">
+                        <h3>세계 각지의 잇따른 자연재난(폭우, 산불, 가뭄)</h3>
+                        <p>21년 7월 서유럽에 강타한 기록적 폭우로 최소 183명이 사망했고,미국에서는 최악의 산불이 20일 이상 이어지며서울 면적의 1.7배를 초토화 시켰습니다.세계각지에서 발생하는 이상기후 재난은 한국도 예외는 아닐 것입니다.</p>
+                    </div>
+                    <img class="box_img" src="assets/images/climate/disaster_1.jpg" alt="산불폭우이미지">
+                </div>
+            </div>
+            <div class="cont2_boxs" name="move_up">
+                <div class="cont2_box">
+                    <div class="con2_txt">
+                        <h1>0.89°C</h1>
+                        <h3>지난 100년간<br>기온상승</h3>
+                    </div>
+                    <div class="txt_sun"></div>
+                    <div class="con2_txt">
+                        <h1>9.8cm</h1>
+                        <h3>지난 30년간<br>해수면 상승</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="cont3_boxs">
+                <div class="cont3_img" name="move_up">
+                    <div class="cont3_txt">
+                        <h2>기온이 1°C 오르면</h2>
+                        <p>- 물 부족 인구 5천만 명<br>
+                            - 10% 육상생물 멸종 위기<br>
+                            - 기후변화로 인한 사망 30만 명<br>
+                            -희귀 동식물들 멸종 <br>
+                            -해수면 온도가 상승하여 해양 생태계 파괴</p>
+                    </div>
+                </div>
+                <div class="cont3_img" name="move_up">
+                    <div class="cont3_txt">
+                        <h2>해수면이 상승하면</h2>
+                        <p>- 해안 홍수 발생<br>
+                            - 저지대의 기반시설 침식<br>
+                            -저고도지역 침수로 인한 사망자 발생<br>
+                            -염분 농도 변화로 인한 생태계 파괴</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="art_cont2">
+            <div class="title">
+                <img src="assets/images/climate/air-pollution_1.png" alt="공장이모티콘" name="move_up">
+                <h1 name="move_up1">엄청난 경제개발의 후폭풍 대기오염</h1>
+            </div>
+            <div class="cont1_boxs">
+                <div class="cont1_box" name="move_up">
+                    <img src="assets/images/climate/disease.jpg" alt="폐질환이미지">
+                    <h4>각종 폐질환 증가</h4>
+                </div>
+                <div class="cont1_box" name="move_up1">
+                    <img src="assets/images/climate/Impotence.jpg" alt="남성성기능이미지">
+                    <h4>남성 성기능 저하</h4>
+                </div>
+                <div class="cont1_box" name="move_up1">
+                    <img src="assets/images/climate/baby.jpg" alt="저체중출산이미지">
+                    <h4>저체중 출산 및 조산 증가</h4>
+                </div>
+            </div>
+            <div class="cont2_boxs">
+                <div class="boxs_title" name="move_up"><p>환경오염으로 인한 조기 사망자</p></div>
+                <div class="graph_box">
+                    <div class="graph_con">
+                        <div class="num_person" id="number" data-target="85">0</div>
+                        <div class="graph"></div>
+                        <div class="graph_infor">직업환경 오염</div>
+                    </div>
+                    <div class="graph_con">
+                        <div class="num_person" id="number2" data-target="90">0</div>
+                        <div class="graph"></div>
+                        <div class="graph_infor">납오염</div>
+                    </div>
+                    <div class="graph_con">
+                        <div class="num_person" id="number3" data-target="136">0</div>
+                        <div class="graph"></div>
+                        <div class="graph_infor">수질오염</div>
+                    </div>
+                    <div class="graph_con">
+                        <div class="num_person" id="number4" data-target="667">0</div>
+                        <div class="graph"></div>
+                        <div class="graph_infor">대기오염</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont3_boxs">
+                <div class="cont2_boxs_cont" name="move_up">
+                    <h1>“환경 오염으로 900만 명 조기 사망…미세먼지 영향 증가”</h1>
+                    <h3>미세먼지로 인한 조기 사망자 계속 증가</h3>
+                    <p>대기 오염으로 인한 전 세계의 조기 사망자는 연간 650만 명으로, 증가세가 지속됐습니다. 특히 미세먼지로 인한 사망자는 2000년 290만 명, 2015년 420만 명에서 2019년 450만 명으로 증가한 것으로 추산됐습니다.</p>
+                </div>
+            </div>
+        </div>
+        <div class="art_cont3">
+            <div class="title">
+                <img src="assets/images/climate/green_earth.png" alt="행복한지구이미지" name="move_up">
+                <h1 name="move_up1">지구를 위해 지켜야할 작은 습관</h1>
+            </div>
+            <div class="art_cont3_box">
+                <div class="art_cont3_img" name="move_up">
+                    <h1>대중교통 이용하기</h1>
+                </div>
+                <div class="art_cont3_img" name="move_up1">
+                    <h1>분리수거를 생활화하기</h1>
+                </div>
+                <div class="art_cont3_img" name="move_up1">
+                    <h1>나무 심기</h1>
+                </div>
+            </div>
+            <div class="title_1" name="move_up1"><h1>우리의 작은 노력이 지구의 미래를 만듭니다.</h1></div>
+            <div class="art_cont3_box2">
+                <div class="art_cont3_box2_img"></div>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <div class="divbox">
+            <img src="assets/images/logo.svg" alt="세이브디어스 로고">
+            <div class="address"><p class="p">HEADQUARTER</p><p class="add">&nbsp;&nbsp;|&nbsp;&nbsp;</p><p class="add">경기 수원시 팔달구 덕영대로 905 아이메카빌딩 2층</p></div>
+            <div class="address"><p class="p">R&D CENTER</p><p class="add">&nbsp;&nbsp;|&nbsp;&nbsp;</p><p class="add">경기 수원시 팔달구 인계로 144번길 수원시청역</p></div>
+            <div class="info"><p class="info_sub">save123@savetheearth.co.kr</p><p class="info_sub">T.031-000-0000</p><p class="info_sub">F.031-000-0000</p></div>
+            <div class="sun"></div>
+            <div class="copyright"><p class="add">© Copyright 2023 FarmStation. All rights reserved.</p><p class="add">개인정보취급방침&nbsp;&nbsp;CONTACT</p></div>
+        </div>
+    </footer>
+</div>
+<script src="js/index.js"></script>
+</body>
+</html>
+<!DOCTYPE html>

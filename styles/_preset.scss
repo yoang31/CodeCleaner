@@ -1,0 +1,31 @@
+@mixin viewport-xs {
+  @media all and (max-width: 470px) {
+    @content;
+  }
+}
+
+@mixin viewport-s {
+  @media all and (min-width: 471px) and (max-width: 690px) {
+    @content;
+  }
+}
+
+@mixin viewport-m {
+  @media all and (min-width: 691px) and (max-width: 940px) {
+    @content;
+  }
+}
+
+@mixin viewport-l {
+  @media all and (min-width: 941px) and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin viewport-xl {
+  @media all and (min-width: 1201px) {
+    @content;
+  }
+}
+
+$blue-primary: #3B82BF;

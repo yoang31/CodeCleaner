@@ -1,0 +1,235 @@
+@import "preset";
+header {
+  width: 100%;
+  height: 3.5rem;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  border-bottom: .0625rem solid rgba(255, 255, 255, .6);
+  h {
+    &1 {
+      font-size: 6rem;
+      @include viewport-s {
+        font-size: 4.8rem;
+      }
+      @include viewport-xs {
+        font-size: 4.2rem;
+      }
+    }
+    &2 {
+      font-size: 3.75rem;
+      @include viewport-s {
+        font-size: 3rem;
+      }
+      @include viewport-xs {
+        font-size: 2.625rem;
+      }
+    }
+    &3 {
+      font-size: 3rem;
+      @include viewport-s {
+        font-size: 2.4rem;
+      }
+      @include viewport-xs {
+        font-size: 2.1rem;
+      }
+    }
+    &4 {
+      font-size: 2.125rem;
+      @include viewport-s {
+        font-size: 1.9125rem;
+      }
+      @include viewport-xs {
+        font-size: 1.7rem;
+      }
+    }
+    &5 {
+      font-size: 1.5rem;
+      @include viewport-s {
+        font-size: 1.35rem;
+      }
+      @include viewport-xs {
+        font-size: 1.2rem;
+      }
+    }
+    &6 {
+      font-size: 1.25rem;
+      @include viewport-s {
+        font-size: 1.125rem;
+      }
+      @include viewport-xs {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  p, span {
+    font-size: 1.125rem;
+    @include viewport-s {
+      font-size: 1rem;
+    }
+    @include viewport-xs {
+      font-size: .875rem;
+    }
+  }
+  > .header-inner {
+    width: 100%;
+    height: 100%;
+    padding: 0 1.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @include viewport-s {
+      padding: 0 1rem;
+    }
+    @include viewport-xs {
+      padding: 0 1rem;
+    }
+    > .button-link-index {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      > svg {
+        height: 2rem;
+        .letters {
+          transition: all .5s ease-in-out;
+          &.black {
+            fill: #000000;
+          }
+        }
+      }
+    }
+    > #header-menu-switch {
+      display: none;
+      &:checked {
+        ~ .button-link-index .letters {
+          fill: #FFFFFF;
+        }
+        ~ label > span {
+          background: #FFFFFF;
+          &:first-of-type, &:last-of-type {
+            opacity: 0;
+            transform: scaleX(0);
+          }
+          &:nth-of-type(2) {
+            transform: rotate(45deg);
+          }
+          &:nth-of-type(3) {
+            transform: rotate(-45deg);
+          }
+        }
+        ~ .dropdown {
+          max-height: 100vh;
+        }
+      }
+    }
+    > label {
+      width: 2rem;
+      aspect-ratio: 1 / 1;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      > span {
+        width: 100%;
+        height: .1875rem;
+        position: absolute;
+        border-radius: .09375rem;
+        background: #FFFFFF;
+        transition: all .3s linear;
+        &:first-of-type {
+          top: .1875rem;
+        }
+        &:last-of-type {
+          bottom: .1875rem;
+        }
+      }
+    }
+    > .dropdown {
+      width: 100%;
+      max-height: 0;
+      padding: 0 1.5rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      background: rgba(0, 0, 0, .2);
+      backdrop-filter: blur(.25rem);
+      transition: all .5s ease-in-out;
+      @include viewport-s {
+        padding: 0 1rem;
+      }
+      @include viewport-xs {
+        padding: 0 1rem;
+      }
+      > nav {
+        width: 100%;
+        max-width: 100rem;
+        padding: 7rem 0 3.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        color: #FFFFFF;
+        @include viewport-xs {
+          padding: 5rem 0 1.5rem;
+          flex-direction: column;
+          gap: 1.5rem;
+        }
+        > h4 {
+          font-weight: normal;
+        }
+        > ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: start;
+          gap: 3rem;
+          @include viewport-xs {
+            flex-direction: column;
+          }
+          > .category {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            > h6 {
+              margin-bottom: 1.5rem;
+              padding: .125rem .5rem 0 .125rem;
+              border-top: .125rem solid #FFFFFF;
+              font-weight: 500;
+            }
+            a {
+              transition: all .3s ease;
+              &:hover {
+                font-weight: 600;
+                color: $blue-primary;
+              }
+            }
+            a:not(:last-of-type) {
+              margin-bottom: .5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.animateOn {
+    .letters {
+      fill: #000000;
+    }
+    label > span {
+      background: #000000;
+    }
+  }
+}

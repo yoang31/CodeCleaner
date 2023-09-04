@@ -1,0 +1,1872 @@
+header {
+    transition: all .5s ease;
+    .dropdown {
+        background: #000000 !important;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    #wrap {
+        width: 100%;
+        overflow: hidden;
+    }
+    section {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+
+    section .sec_back {
+        width: 100%;
+        height: 100%;
+        background-image: url("../assets/images/climate/smog_2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        animation: move 3s;
+        position: absolute;
+        z-index: 1;
+    }
+
+    section .sec_cont {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 2;
+    }
+
+    section .sec_cont h1 {
+        font-size: clamp(2.5rem, 3vw, 3rem);
+        color: #fff;
+    }
+
+    section .sec_cont p {
+        color: #fff;
+        margin-top: 20px;
+        font-size: clamp(0.8rem, 2.5vw, 1.5rem);
+    }
+
+    article {
+        width: 100%;
+    }
+
+    article .art_cont1 {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    article .art_cont1 .title {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        border-bottom: 1px solid #e6e6e6;
+        font-size: clamp(0.7rem, 3vw, 1rem);
+    }
+
+    article .art_cont1 .title img {
+        width: 30px;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.5s all linear;
+    }
+
+    article .art_cont1 .title h1 {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.5s all linear;
+    }
+
+    article .art_cont1 .cont1_boxs {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: end;
+    }
+
+    article .art_cont1 .cont1_box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        opacity: 0;
+        transition: 0.3s all linear;
+        transform: translateY(50px);
+    }
+
+    article .art_cont1 .cont1_box:nth-of-type(2n) {
+        align-self: flex-start;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    article .art_cont1 .cont1_box .box_txt {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 80%;
+        height: 200px;
+        font-size: clamp(0.7rem, 3.5vw, 1rem);
+    }
+
+    article .art_cont1 .cont1_box .box_img {
+        width: 83vw;
+        min-width: 300px;
+    }
+
+    article .art_cont1 .cont1_box:nth-of-type(2n) .box_img:nth-of-type(1) {
+        display: none;
+    }
+
+    article .art_cont1 .cont2_boxs {
+        width: 100%;
+        padding: 50px 0;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 1s all linear;
+    }
+
+    article .art_cont1 .cont2_boxs .cont2_box {
+        width: 100%;
+        border: 2px solid #e6e6e6;
+        border-radius: 25px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    article .art_cont1 .cont2_boxs .cont2_box .con2_txt {
+        width: calc(100% / 2);
+        padding: 70px 0;
+        text-align: center;
+    }
+
+    article .art_cont1 .cont2_boxs .cont2_box .txt_sun {
+        border: 1px solid #e6e6e6;
+    }
+
+    article .art_cont1 .cont2_boxs .cont2_box .con2_txt h1 {
+        font-size: clamp(2rem, 13vw, 3rem);
+        padding: 20px 0;
+        color: #505050;
+    }
+
+    article .art_cont1 .cont2_boxs .cont2_box .con2_txt h3 {
+        font-size: clamp(1rem, 5vw, 1.5rem);
+        color: #414141;
+    }
+
+    article .art_cont1 .cont3_boxs {
+        width: 100%;
+        padding: 50px 0;
+        display: grid;
+        grid-template-rows:repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    article .art_cont1 .cont3_boxs .cont3_img {
+        padding: 120px 10px 10px;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 1s all linear;
+    }
+
+    article .art_cont1 .cont3_boxs .cont3_img:nth-of-type(1) {
+        background: rgba(1, 1, 1, 0.5) url("../assets/images/climate/drought.jpg") no-repeat center / cover;
+        background-blend-mode: darken;
+        background-blend-mode: darken;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    article .art_cont1 .cont3_boxs .cont3_img:nth-of-type(2) {
+        background: rgba(1, 1, 1, 0.5) url("../assets/images/climate/flood.jpg") no-repeat center / cover;
+        background-blend-mode: darken;
+        background-blend-mode: darken;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    article .art_cont1 .cont3_boxs .cont3_img .cont3_txt {
+        color: #fff;
+    }
+
+    article .art_cont1 .cont3_boxs .cont3_img .cont3_txt h2 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    article .art_cont1 .cont3_boxs .cont3_img .cont3_txt p {
+        font-size: 1rem;
+    }
+
+    article .art_cont2 {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    article .art_cont2 .title {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        border-bottom: 1px solid #e6e6e6;
+        font-size: clamp(0.7rem, 3vw, 1rem);
+    }
+
+    article .art_cont2 .title h1 {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.5s all linear;
+    }
+
+    article .art_cont2 .title img {
+        width: 40px;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.5s all linear;
+    }
+
+    article .art_cont2 .cont1_boxs {
+        width: 100%;
+        padding: 100px 0;
+        display: flex;
+    }
+
+    article .art_cont2 .cont1_boxs .cont1_box {
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 1s all linear;
+    }
+
+    article .art_cont2 .cont1_boxs .cont1_box img {
+        width: clamp(100px, 100%, 150px);
+        padding-bottom: 20px;
+    }
+
+    article .art_cont2 .cont1_boxs .cont1_box h4 {
+        font-size: clamp(0.5rem, 3vw, 0.9rem);
+    }
+
+    article .art_cont2 .cont2_boxs {
+        width: 100%;
+        padding: 60px 0;
+    }
+
+    article .art_cont2 .cont2_boxs .boxs_title {
+        text-align: center;
+        font-size: clamp(0.7rem, 4vw, 1rem);
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.3s all linear;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box {
+        width: 90%;
+        height: 480px;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        align-items: flex-end;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box .graph_con {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box .graph_con .num_person {
+        font-weight: bold;
+        color: #ed6464;
+        font-size: 0.9rem;
+        transition: 1s all linear;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box .graph_con:nth-of-type(4) .num_person {
+        color: #ad1414;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box .graph {
+        width: 20vw;
+        min-width: 0px;
+        background-color: #f97878;
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        margin: 2vw;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box .graph_con:nth-of-type(1) .graph {
+        height: 0px;
+        transition: 0.8s all linear;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box .graph_con:nth-of-type(2) .graph {
+        height: 0px;
+        transition: 0.8s all linear;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box .graph_con:nth-of-type(3) .graph {
+        height: 0px;
+        transition: 0.8s all linear;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box .graph_con:nth-of-type(4) .graph {
+        height: 0px;
+        background-color: #ad1414;
+        transition: 0.6s all linear;
+    }
+
+    article .art_cont2 .cont3_boxs {
+        width: 100%;
+        height: 300px;
+        padding: 10px 0;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 1) 100%), url("../assets/images/climate/smog_1.jpg") no-repeat center / cover;
+        display: flex;
+        align-items: flex-end
+    }
+
+    article .art_cont2 .cont3_boxs .cont2_boxs_cont {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        color: #fff;
+        padding: 0 20px;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.5s all linear;
+    }
+
+    article .art_cont2 .cont3_boxs .cont2_boxs_cont h1 {
+        font-size: clamp(1rem, 3.5vw, 2rem);
+    }
+
+    article .art_cont2 .cont3_boxs .cont2_boxs_cont h3 {
+        font-size: clamp(1rem, 3vw, 2rem);
+    }
+
+    article .art_cont2 .cont3_boxs .cont2_boxs_cont p {
+        font-size: clamp(0.5rem, 2.4vw, 2rem);
+    }
+
+
+    article .art_cont3 {
+        width: 100%;
+        margin: 0 auto;
+        padding: 60px 20px 0 20px;
+    }
+
+    article .art_cont3 .title {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        border-bottom: 1px solid #e6e6e6;
+        font-size: clamp(0.7rem, 3vw, 1rem);
+    }
+
+    article .art_cont3 .title h1 {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.5s all linear;
+    }
+
+    article .art_cont3 .title img {
+        width: 40px;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.5s all linear;
+    }
+
+    article .art_cont3 .art_cont3_box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 50px 0;
+    }
+
+    article .art_cont3 .art_cont3_img {
+        width: 100%;
+        height: 200px;
+        margin: 10px 0;
+        opacity: 0;
+        transform: translateY(50px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 1s all linear;
+    }
+
+    article .art_cont3 .art_cont3_img:nth-of-type(1) {
+        background: rgba(1, 1, 1, 0.7) url("../assets/images/climate/subway.jpg") no-repeat center / cover;
+        background-blend-mode: darken;
+    }
+
+    article .art_cont3 .art_cont3_img:nth-of-type(2) {
+        background: rgba(1, 1, 1, 0.7) url("../assets/images/climate/recycle.jpg") no-repeat center / cover;
+        background-blend-mode: darken;
+    }
+
+    article .art_cont3 .art_cont3_img:nth-of-type(3) {
+        background: rgba(1, 1, 1, 0.7) url("../assets/images/climate/mind.jpg") no-repeat center / cover;
+        background-blend-mode: darken;
+    }
+
+    article .art_cont3 .art_cont3_img h1 {
+        color: #fff;
+        font-size: 1.4rem;
+        opacity: 1;
+    }
+
+    article .art_cont3 .title_1 {
+        width: 100%;
+        text-align: center;
+        padding: 100px 0 0px 0;
+        font-size: clamp(0.5rem, 3vw, 0.9rem);
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 1s all linear;
+    }
+
+    article .art_cont3 .art_cont3_box2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0 0 0;
+    }
+
+    article .art_cont3 .art_cont3_box2 .art_cont3_box2_img {
+        width: 100vw;
+        height: 300px;
+        background: url("../assets/images/climate/earth.jpg") no-repeat center / cover;
+    }
+}
+
+@media screen and (min-width: 471px) and (max-width: 690px) {
+    #wrap {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    section {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+
+    section .sec_back {
+        width: 100%;
+        height: 100%;
+        background-image: url("../assets/images/climate/smog_2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        animation: move 3s;
+        position: absolute;
+        z-index: 1;
+    }
+
+    section .sec_cont {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 2;
+    }
+
+    section .sec_cont h1 {
+        font-size: clamp(2.5rem, 3vw, 3rem);
+        color: #fff;
+    }
+
+    section .sec_cont p {
+        color: #fff;
+        margin-top: 20px;
+        font-size: clamp(0.8rem, 2.5vw, 1.5rem);
+    }
+
+    article {
+        width: 100%;
+    }
+
+    article .art_cont1 {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    article .art_cont1 .title {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        border-bottom: 1px solid #e6e6e6;
+        font-size: 0.8rem;
+    }
+
+    article .art_cont1 .title img {
+        width: 30px;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.5s all linear;
+    }
+
+    article .art_cont1 .title h1 {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.5s all linear;
+    }
+
+    article .art_cont1 .cont1_boxs {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: end;
+    }
+
+    article .art_cont1 .cont1_box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        opacity: 0;
+        transition: 0.3s all linear;
+        transform: translateY(50px);
+    }
+
+    article .art_cont1 .cont1_box:nth-of-type(2n) {
+        align-self: flex-start;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    article .art_cont1 .cont1_box .box_txt {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 70%;
+        height: 200px;
+        font-size: clamp(1rem, 1.8vw, 1.1rem);
+    }
+
+    article .art_cont1 .cont1_box .box_img {
+        width: 20.2vw;
+        min-width: 400px;
+    }
+
+    article .art_cont1 .cont1_box:nth-of-type(2n) .box_img:nth-of-type(1) {
+        display: none;
+    }
+
+    article .art_cont1 .cont2_boxs {
+        width: 100%;
+        padding: 50px 0;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 1s all linear;
+    }
+
+    article .art_cont1 .cont2_boxs .cont2_box {
+        width: 100%;
+        border: 2px solid #e6e6e6;
+        border-radius: 25px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    article .art_cont1 .cont2_boxs .cont2_box .con2_txt {
+        width: calc(100% / 2);
+        padding: 70px 0;
+        text-align: center;
+    }
+
+    article .art_cont1 .cont2_boxs .cont2_box .txt_sun {
+        border: 1px solid #e6e6e6;
+    }
+
+    article .art_cont1 .cont2_boxs .cont2_box .con2_txt h1 {
+        font-size: clamp(3.5rem, 2.2vw, 5rem);
+        padding: 20px 0;
+        color: #505050;
+    }
+
+    article .art_cont1 .cont2_boxs .cont2_box .con2_txt h3 {
+        font-size: clamp(1.5rem, 2vw, 2rem);
+        color: #414141;
+    }
+
+    article .art_cont1 .cont3_boxs {
+        width: 100%;
+        padding: 50px 0;
+        display: grid;
+        grid-template-rows:repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    article .art_cont1 .cont3_boxs .cont3_img {
+        padding: 120px 10px 10px;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 1s all linear;
+    }
+
+    article .art_cont1 .cont3_boxs .cont3_img:nth-of-type(1) {
+        background: rgba(1, 1, 1, 0.5) url("../assets/images/climate/drought.jpg") no-repeat center / cover;
+        background-blend-mode: darken;
+        background-blend-mode: darken;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    article .art_cont1 .cont3_boxs .cont3_img:nth-of-type(2) {
+        background: rgba(1, 1, 1, 0.5) url("../assets/images/climate/flood.jpg") no-repeat center / cover;
+        background-blend-mode: darken;
+        background-blend-mode: darken;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    article .art_cont1 .cont3_boxs .cont3_img .cont3_txt {
+        color: #fff;
+    }
+
+    article .art_cont1 .cont3_boxs .cont3_img .cont3_txt h2 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    article .art_cont1 .cont3_boxs .cont3_img .cont3_txt p {
+        font-size: 1rem;
+    }
+
+    article .art_cont2 {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    article .art_cont2 .title {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        border-bottom: 1px solid #e6e6e6;
+        font-size: 0.8rem;
+    }
+
+    article .art_cont2 .title h1 {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.5s all linear;
+    }
+
+    article .art_cont2 .title img {
+        width: 40px;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.5s all linear;
+    }
+
+    article .art_cont2 .cont1_boxs {
+        width: 100%;
+        padding: 100px 0;
+        display: flex;
+    }
+
+    article .art_cont2 .cont1_boxs .cont1_box {
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 1s all linear;
+    }
+
+    article .art_cont2 .cont1_boxs .cont1_box img {
+        width: clamp(130px, 70%, 190px);
+        padding-bottom: 20px;
+    }
+
+    article .art_cont2 .cont2_boxs {
+        width: 100%;
+        padding: 60px 0;
+    }
+
+    article .art_cont2 .cont2_boxs .boxs_title {
+        text-align: center;
+        font-size: 1.2rem;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.3s all linear;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box {
+        width: 90%;
+        height: 540px;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        align-items: flex-end;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box .graph_con {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box .graph_con .num_person {
+        font-weight: bold;
+        color: #ed6464;
+        font-size: 1.1rem;
+        transition: 1s all linear;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box .graph_con:nth-of-type(4) .num_person {
+        color: #ad1414;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box .graph {
+        width: 20vw;
+        min-width: 100px;
+        background-color: #f97878;
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        margin: 2vw;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box .graph_con:nth-of-type(1) .graph {
+        height: 0px;
+        transition: 0.8s all linear;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box .graph_con:nth-of-type(2) .graph {
+        height: 0px;
+        transition: 0.8s all linear;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box .graph_con:nth-of-type(3) .graph {
+        height: 0px;
+        transition: 0.8s all linear;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box .graph_con:nth-of-type(4) .graph {
+        height: 0px;
+        background-color: #ad1414;
+        transition: 0.6s all linear;
+    }
+
+    article .art_cont2 .cont3_boxs {
+        width: 100%;
+        height: 300px;
+        padding: 10px 0;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 1) 100%), url("../assets/images/climate/smog_1.jpg") no-repeat center / cover;
+        display: flex;
+        align-items: flex-end
+    }
+
+    article .art_cont2 .cont3_boxs .cont2_boxs_cont {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        color: #fff;
+        padding: 0 20px;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.5s all linear;
+    }
+
+    article .art_cont2 .cont3_boxs .cont2_boxs_cont h1 {
+        font-size: clamp(1rem, 3.5vw, 2rem);
+    }
+
+    article .art_cont2 .cont3_boxs .cont2_boxs_cont h3 {
+        font-size: clamp(1rem, 3vw, 2rem);
+    }
+
+    article .art_cont2 .cont3_boxs .cont2_boxs_cont p {
+        font-size: clamp(0.5rem, 2.4vw, 2rem);
+    }
+
+
+    article .art_cont3 {
+        width: 100%;
+        margin: 0 auto;
+        padding: 60px 20px 0 20px;
+    }
+
+    article .art_cont3 .title {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        border-bottom: 1px solid #e6e6e6;
+        font-size: 0.9rem;
+    }
+
+    article .art_cont3 .title h1 {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.5s all linear;
+    }
+
+    article .art_cont3 .title img {
+        width: 40px;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.5s all linear;
+    }
+
+    article .art_cont3 .art_cont3_box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 50px 0;
+    }
+
+    article .art_cont3 .art_cont3_img {
+        width: 100%;
+        height: 200px;
+        margin: 10px 0;
+        opacity: 0;
+        transform: translateY(50px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 1s all linear;
+    }
+
+    article .art_cont3 .art_cont3_img:nth-of-type(1) {
+        background: url("../assets/images/climate/subway.jpg") no-repeat center / cover;
+        background-blend-mode: darken;
+    }
+
+    article .art_cont3 .art_cont3_img:nth-of-type(1):hover {
+        background: rgba(1, 1, 1, 0.7) url("../assets/images/climate/subway.jpg") no-repeat center / cover;
+        background-blend-mode: darken;
+    }
+
+    article .art_cont3 .art_cont3_img:nth-of-type(2) {
+        background: url("../assets/images/climate/recycle.jpg") no-repeat center / cover;
+    }
+
+    article .art_cont3 .art_cont3_img:nth-of-type(2):hover {
+        background: rgba(1, 1, 1, 0.7) url("../assets/images/climate/recycle.jpg") no-repeat center / cover;
+        background-blend-mode: darken;
+    }
+
+    article .art_cont3 .art_cont3_img:nth-of-type(3) {
+        background: url("../assets/images/climate/mind.jpg") no-repeat center / cover;
+    }
+
+    article .art_cont3 .art_cont3_img:nth-of-type(3):hover {
+        background: rgba(1, 1, 1, 0.7) url("../assets/images/climate/mind.jpg") no-repeat center / cover;
+        background-blend-mode: darken;
+    }
+
+    article .art_cont3 .art_cont3_img h1 {
+        color: #fff;
+        font-size: 1.4rem;
+        opacity: 0;
+        transform: translateY(20px)
+    }
+
+    article .art_cont3 .title_1 {
+        width: 100%;
+        text-align: center;
+        padding: 100px 0 0px 0;
+        font-size: 0.9rem;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 1s all linear;
+    }
+
+    article .art_cont3 .art_cont3_box2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0 0 0;
+    }
+
+    article .art_cont3 .art_cont3_box2 .art_cont3_box2_img {
+        width: 100vw;
+        height: 300px;
+        background: url("../assets/images/climate/earth.jpg") no-repeat center / cover;
+    }
+
+}
+
+@media screen and (min-width: 691px) and (max-width: 940px) {
+    #wrap {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    section {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+
+    section .sec_back {
+        width: 100%;
+        height: 100%;
+        background-image: url("../assets/images/climate/smog_2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        animation: move 3s;
+        position: absolute;
+        z-index: 1;
+    }
+
+    section .sec_cont {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 2;
+    }
+
+    section .sec_cont h1 {
+        font-size: 50px;
+        color: #fff;
+    }
+
+    section .sec_cont p {
+        color: #fff;
+        margin-top: 20px;
+        font-size: clamp(1rem, 2.4vw, 1.3rem);
+    }
+
+    article {
+        width: 100%;
+    }
+
+    article .art_cont1 {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    article .art_cont1 .title {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        border-bottom: 1px solid #e6e6e6;
+        font-size: 1.1rem;
+    }
+
+    article .art_cont1 .title img {
+        width: 40px;
+    }
+
+    article .art_cont1 .cont1_boxs {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: end;
+        padding: 50px 0;
+    }
+
+    article .art_cont1 .cont1_box {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 20px 0;
+        opacity: 0;
+        transition: 0.3s all linear;
+        transform: translateY(50px);
+    }
+
+    article .art_cont1 .cont1_box:nth-of-type(2n) {
+        align-self: flex-start;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    article .art_cont1 .cont1_box .box_txt {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 500px;
+        height: 200px;
+        font-size: clamp(1rem, 1.8vw, 1.3rem);
+    }
+
+    article .art_cont1 .cont1_box .box_img {
+        width: 20.2vw;
+        min-width: 320px;
+        margin: 50px 0 50px 20px;
+    }
+
+    article .art_cont1 .cont1_box:nth-of-type(2n) .box_img {
+        margin: 50px 20px 50px 0;
+    }
+
+    article .art_cont1 .cont1_box:nth-of-type(2n) .box_img:nth-of-type(2) {
+        display: none;
+    }
+
+
+    article .art_cont1 .cont2_boxs {
+        width: 100%;
+        padding: 50px 0;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 1s all linear;
+    }
+
+    article .art_cont1 .cont2_boxs .cont2_box {
+        width: 100%;
+        border: 2px solid #e6e6e6;
+        border-radius: 25px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    article .art_cont1 .cont2_boxs .cont2_box .con2_txt {
+        width: calc(100% / 2);
+        padding: 100px 0;
+        text-align: center;
+    }
+
+    article .art_cont1 .cont2_boxs .cont2_box .txt_sun {
+        border: 1px solid #e6e6e6;
+    }
+
+    article .art_cont1 .cont2_boxs .cont2_box .con2_txt h1 {
+        font-size: clamp(4.5rem, 5vw, 6rem);
+        padding: 20px 0;
+        color: #505050;
+    }
+
+    article .art_cont1 .cont2_boxs .cont2_box .con2_txt h3 {
+        font-size: clamp(1.5rem, 2vw, 2rem);
+        color: #414141;
+    }
+
+    article .art_cont1 .cont3_boxs {
+        width: 100%;
+        padding: 50px 0;
+        display: grid;
+        grid-template-rows:repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    article .art_cont1 .cont3_boxs .cont3_img {
+        padding: 120px 10px 10px;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 1s all linear;
+    }
+
+    article .art_cont1 .cont3_boxs .cont3_img:nth-of-type(1) {
+        background: rgba(1, 1, 1, 0.5) url("../assets/images/climate/drought.jpg") no-repeat center / cover;
+        background-blend-mode: darken;
+        background-blend-mode: darken;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    article .art_cont1 .cont3_boxs .cont3_img:nth-of-type(2) {
+        background: rgba(1, 1, 1, 0.5) url("../assets/images/climate/flood.jpg") no-repeat center / cover;
+        background-blend-mode: darken;
+        background-blend-mode: darken;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    article .art_cont1 .cont3_boxs .cont3_img .cont3_txt {
+        color: #fff;
+    }
+
+    article .art_cont1 .cont3_boxs .cont3_img .cont3_txt h2 {
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+    }
+
+    article .art_cont1 .cont3_boxs .cont3_img .cont3_txt p {
+        font-size: 1.1rem;
+    }
+
+    article .art_cont2 {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    article .art_cont2 .title {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        border-bottom: 1px solid #e6e6e6;
+        font-size: 1.1rem;
+    }
+
+    article .art_cont2 .title h1 {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.5s all linear;
+    }
+
+    article .art_cont2 .title img {
+        width: 50px;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.5s all linear;
+    }
+
+    article .art_cont2 .cont1_boxs {
+        width: 100%;
+        padding: 100px 0;
+        display: flex;
+    }
+
+    article .art_cont2 .cont1_boxs .cont1_box {
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 1s all linear;
+    }
+
+    article .art_cont2 .cont1_boxs .cont1_box img {
+        width: clamp(170px, 70%, 220px);
+        padding-bottom: 20px;
+    }
+
+    article .art_cont2 .cont2_boxs {
+        width: 100%;
+        padding: 60px 0;
+    }
+
+    article .art_cont2 .cont2_boxs .boxs_title {
+        text-align: center;
+        font-size: 1.2rem;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.3s all linear;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box {
+        width: 90%;
+        height: 540px;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        align-items: flex-end;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box .graph_con {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box .graph_con .num_person {
+        font-weight: bold;
+        color: #ed6464;
+        font-size: 1.1rem;
+        transition: 1s all linear;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box .graph_con:nth-of-type(4) .num_person {
+        color: #ad1414;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box .graph {
+        width: 130px;
+        background-color: #f97878;
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        margin: 0.8rem;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box .graph_con:nth-of-type(1) .graph {
+        height: 0px;
+        transition: 0.8s all linear;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box .graph_con:nth-of-type(2) .graph {
+        height: 0px;
+        transition: 0.8s all linear;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box .graph_con:nth-of-type(3) .graph {
+        height: 0px;
+        transition: 0.8s all linear;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box .graph_con:nth-of-type(4) .graph {
+        height: 0px;
+        background-color: #ad1414;
+        transition: 0.6s all linear;
+    }
+
+    article .art_cont2 .cont3_boxs {
+        width: 100%;
+        height: 300px;
+        padding: 10px 0;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 1) 100%), url("../assets/images/climate/smog_1.jpg") no-repeat center / cover;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    article .art_cont2 .cont3_boxs .cont2_boxs_cont {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        color: #fff;
+        padding: 0 20px;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.5s all linear;
+    }
+
+
+    article .art_cont3 {
+        width: 100%;
+        margin: 0 auto;
+        padding: 60px 20px 0 20px;
+    }
+
+    article .art_cont3 .title {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        border-bottom: 1px solid #e6e6e6;
+        font-size: 1.1rem;
+    }
+
+    article .art_cont3 .title h1 {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.5s all linear;
+    }
+
+    article .art_cont3 .title img {
+        width: 50px;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.5s all linear;
+    }
+
+    article .art_cont3 .art_cont3_box {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 80px 0;
+    }
+
+    article .art_cont3 .art_cont3_img {
+        width: 30%;
+        height: 500px;
+        opacity: 0;
+        transform: translateY(50px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 1s all linear;
+    }
+
+    article .art_cont3 .art_cont3_img:nth-of-type(1) {
+        background: url("../assets/images/climate/subway.jpg") no-repeat center / cover;
+        background-blend-mode: darken;
+    }
+
+    article .art_cont3 .art_cont3_img:nth-of-type(1):hover {
+        background: rgba(1, 1, 1, 0.7) url("../assets/images/climate/subway.jpg") no-repeat center / cover;
+        background-blend-mode: darken;
+    }
+
+    article .art_cont3 .art_cont3_img:nth-of-type(2) {
+        background: url("../assets/images/climate/recycle.jpg") no-repeat center / cover;
+    }
+
+    article .art_cont3 .art_cont3_img:nth-of-type(2):hover {
+        background: rgba(1, 1, 1, 0.7) url("../assets/images/climate/recycle.jpg") no-repeat center / cover;
+        background-blend-mode: darken;
+    }
+
+    article .art_cont3 .art_cont3_img:nth-of-type(3) {
+        background: url("../assets/images/climate/mind.jpg") no-repeat center / cover;
+    }
+
+    article .art_cont3 .art_cont3_img:nth-of-type(3):hover {
+        background: rgba(1, 1, 1, 0.7) url("../assets/images/climate/mind.jpg") no-repeat center / cover;
+        background-blend-mode: darken;
+    }
+
+    article .art_cont3 .art_cont3_img h1 {
+        color: #fff;
+        font-size: 1.4rem;
+        opacity: 0;
+        transform: translateY(20px)
+    }
+
+    article .art_cont3 .title_1 {
+        width: 100%;
+        text-align: center;
+        padding: 100px 0 0px 0;
+        font-size: 1.1rem;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 1s all linear;
+    }
+
+    article .art_cont3 .art_cont3_box2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0 0 0;
+    }
+
+    article .art_cont3 .art_cont3_box2 .art_cont3_box2_img {
+        width: 100vw;
+        height: 300px;
+        background: url("../assets/images/climate/earth.jpg") no-repeat center / cover;
+    }
+
+}
+
+@media screen and (min-width: 941px) {
+    #wrap {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    section {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+
+    section .sec_back {
+        width: 100%;
+        height: 100%;
+        background-image: url("../assets/images/climate/smog_2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        animation: move 3s;
+        position: absolute;
+        z-index: 1;
+    }
+
+    section .sec_cont {
+        width: 100%;
+        height: 110vh;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 2;
+    }
+
+    section .sec_cont h1 {
+        font-size: clamp(3.7rem, 3vw, 6rem);
+        color: #fff;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.5s all linear;
+    }
+
+    section .sec_cont p {
+        color: #fff;
+        margin-top: 20px;
+        font-size: clamp(1.3rem, 2vw, 1.7rem);
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.5s all linear;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    article .art_cont1 {
+        width: 100%;
+        max-width: 100rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px 30px;
+    }
+
+    article .art_cont1 .title {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        border-bottom: 1px solid #e6e6e6;
+        font-size: 1.2rem;
+    }
+
+    article .art_cont1 .title h1 {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.5s all linear;
+    }
+
+    article .art_cont1 .title img {
+        width: 50px;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.5s all linear;
+    }
+
+    article .art_cont1 .cont1_boxs {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: end;
+        padding: 30px 0;
+    }
+
+    article .art_cont1 .cont1_box {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 50px 0;
+        opacity: 0;
+        transition: 0.3s all linear;
+        transform: translateY(50px);
+    }
+
+    article .art_cont1 .cont1_box:nth-of-type(2n) {
+        align-self: flex-start;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    article .art_cont1 .cont1_box .box_txt {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 500px;
+        height: 200px;
+        font-size: clamp(1rem, 1.8vw, 1.3rem);
+    }
+
+    article .art_cont1 .cont1_box .box_img {
+        width: 26.2vw;
+        min-width: 370px;
+        margin: 50px 0 50px 50px;
+    }
+
+    article .art_cont1 .cont1_box:nth-of-type(2n) .box_img {
+        margin: 50px 50px 50px 0;
+    }
+
+    article .art_cont1 .cont1_box:nth-of-type(2n) .box_img:nth-of-type(2) {
+        display: none;
+    }
+
+
+    article .art_cont1 .cont2_boxs {
+        width: 100%;
+        padding: 100px 0;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 1s all linear;
+    }
+
+    article .art_cont1 .cont2_boxs .cont2_box {
+        width: 80%;
+        max-width: 1260px;
+        border: 2px solid #e6e6e6;
+        border-radius: 25px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    article .art_cont1 .cont2_boxs .cont2_box .con2_txt {
+        width: calc(100% / 2);
+        padding: 150px 0;
+        text-align: center;
+    }
+
+    article .art_cont1 .cont2_boxs .cont2_box .txt_sun {
+        border: 1px solid #e6e6e6;
+    }
+
+    article .art_cont1 .cont2_boxs .cont2_box .con2_txt h1 {
+        font-size: clamp(4.5rem, 5vw, 6rem);
+        padding: 0 0 20px 0;
+        color: #505050;
+    }
+
+    article .art_cont1 .cont2_boxs .cont2_box .con2_txt h3 {
+        font-size: clamp(1.5rem, 2vw, 2rem);
+        color: #414141;
+    }
+
+    article .art_cont1 .cont3_boxs {
+        width: 100%;
+        padding: 100px 0;
+        display: grid;
+        grid-template-rows:repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    article .art_cont1 .cont3_boxs .cont3_img {
+        padding: 200px 10px 10px;
+        opacity: 0;
+        transform: translateY(100px);
+        transition: 0.8s all linear;
+    }
+
+    article .art_cont1 .cont3_boxs .cont3_img:nth-of-type(1) {
+        background: rgba(1, 1, 1, 0.5) url("../assets/images/climate/drought.jpg") no-repeat center / cover;
+        background-blend-mode: darken;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    article .art_cont1 .cont3_boxs .cont3_img:nth-of-type(2) {
+        background: rgba(1, 1, 1, 0.5) url("../assets/images/climate/flood.jpg") no-repeat center / cover;
+        background-blend-mode: darken;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    article .art_cont1 .cont3_boxs .cont3_img .cont3_txt {
+        color: #fff;
+    }
+
+    article .art_cont1 .cont3_boxs .cont3_img .cont3_txt h2 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+
+    article .art_cont1 .cont3_boxs .cont3_img .cont3_txt p {
+        font-size: 1.3rem;
+    }
+
+
+    article .art_cont2 {
+        width: 100%;
+        max-width: 100rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px;
+    }
+
+    article .art_cont2 .title {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        border-bottom: 1px solid #e6e6e6;
+        font-size: 1.2rem;
+    }
+
+    article .art_cont2 .title h1 {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.5s all linear;
+    }
+
+    article .art_cont2 .title img {
+        width: 60px;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.5s all linear;
+    }
+
+    article .art_cont2 .cont1_boxs {
+        width: 100%;
+        padding: 150px 0;
+        display: flex;
+    }
+
+    article .art_cont2 .cont1_boxs .cont1_box {
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 1s all linear;
+    }
+
+    article .art_cont2 .cont1_boxs .cont1_box img {
+        width: clamp(230px, 70%, 300px);
+        padding-bottom: 20px;
+    }
+
+    article .art_cont2 .cont1_boxs .cont1_box h4 {
+        font-size: 1.3rem;
+    }
+
+    article .art_cont2 .cont2_boxs {
+        width: 100%;
+        padding: 60px 0;
+    }
+
+    article .art_cont2 .cont2_boxs .boxs_title {
+        text-align: center;
+        font-size: 1.2rem;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.3s all linear;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box {
+        width: 70%;
+        height: 540px;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        align-items: flex-end;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box .graph_con {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box .graph_con .num_person {
+        font-weight: bold;
+        color: #ed6464;
+        font-size: 1.3rem;
+        transition: 1s all linear;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box .graph_con:nth-of-type(4) .num_person {
+        color: #ad1414;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box .graph {
+        width: 150px;
+        background-color: #f97878;
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        margin: 0.8rem;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box .graph_con:nth-of-type(1) .graph {
+        height: 0px;
+        transition: 0.8s all linear;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box .graph_con:nth-of-type(2) .graph {
+        height: 0px;
+        transition: 0.8s all linear;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box .graph_con:nth-of-type(3) .graph {
+        height: 0px;
+        transition: 0.8s all linear;
+    }
+
+    article .art_cont2 .cont2_boxs .graph_box .graph_con:nth-of-type(4) .graph {
+        height: 0px;
+        background-color: #ad1414;
+        transition: 0.6s all linear;
+    }
+
+    article .art_cont2 .cont3_boxs {
+        width: 100%;
+        height: 500px;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 1) 100%), url("../assets/images/climate/smog_1.jpg") no-repeat center / cover;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    article .art_cont2 .cont3_boxs .cont2_boxs_cont {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        color: #fff;
+        padding: 20px 20px;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.5s all linear;
+    }
+
+    article .art_cont3 {
+        width: 100%;
+        max-width: 100rem;
+        margin: 0 auto;
+        padding: 60px 60px 0 60px;
+    }
+
+    article .art_cont3 .title {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        border-bottom: 1px solid #e6e6e6;
+        font-size: 1.2rem;
+    }
+
+    article .art_cont3 .title h1 {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.5s all linear;
+    }
+
+    article .art_cont3 .title img {
+        width: 60px;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 0.5s all linear;
+    }
+
+    article .art_cont3 .art_cont3_box {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 80px 0;
+    }
+
+    article .art_cont3 .art_cont3_img {
+        width: 33%;
+        height: 700px;
+        opacity: 0;
+        transform: translateY(50px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s all linear;
+    }
+
+    article .art_cont3 .art_cont3_img:nth-of-type(1) {
+        background: url("../assets/images/climate/subway.jpg") no-repeat center / cover;
+        background-blend-mode: darken;
+    }
+
+    article .art_cont3 .art_cont3_img:nth-of-type(1):hover {
+        background: rgba(1, 1, 1, 0.7) url("../assets/images/climate/subway.jpg") no-repeat center / cover;
+        background-blend-mode: darken;
+    }
+
+    article .art_cont3 .art_cont3_img:nth-of-type(2) {
+        background: url("../assets/images/climate/recycle.jpg") no-repeat center / cover;
+    }
+
+    article .art_cont3 .art_cont3_img:nth-of-type(2):hover {
+        background: rgba(1, 1, 1, 0.7) url("../assets/images/climate/recycle.jpg") no-repeat center / cover;
+        background-blend-mode: darken;
+    }
+
+    article .art_cont3 .art_cont3_img:nth-of-type(3) {
+        background: url("../assets/images/climate/mind.jpg") no-repeat center / cover;
+    }
+
+    article .art_cont3 .art_cont3_img:nth-of-type(3):hover {
+        background: rgba(1, 1, 1, 0.7) url("../assets/images/climate/mind.jpg") no-repeat center / cover;
+        background-blend-mode: darken;
+    }
+
+    article .art_cont3 .art_cont3_img h1 {
+        color: #fff;
+        font-size: 2rem;
+        opacity: 0;
+        transform: translateY(20px)
+    }
+
+    article .art_cont3 .title_1 {
+        width: 100%;
+        text-align: center;
+        padding: 200px 0 20px 0;
+        font-size: 1.2rem;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: 1s all linear;
+    }
+
+    article .art_cont3 .art_cont3_box2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 0 0 0;
+    }
+
+    article .art_cont3 .art_cont3_box2 .art_cont3_box2_img {
+        width: 100vw;
+        height: 600px;
+        background: url("../assets/images/climate/earth.jpg") no-repeat center / cover;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
